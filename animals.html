@@ -1,0 +1,213 @@
+<html>
+    <head>
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+<script>
+        function changeAnimals(sender) {
+            // alert(sender.value);
+            //document.getElementById("all").style = "display: none";
+            hideCoopersCoast();
+            hideMinnesotaTrail();
+            hideEvergladeFun();
+            hideAfricaArea();
+            // alert(sender.value);
+            if (sender.value == "all") {
+                // alert("in the all");
+                showCoopersCoast();
+                showMinnesotaTrail();
+                showEvergladeFun();
+                showAfricaArea();
+            } else {
+                // alert("in the else");
+                //alert(sender.value);
+                var exhibit = document.getElementById(sender.value);
+                //https://thevlm.org/wp-content/uploads/Alligator-v2-300x200.jpgalert(exhibit.innerHTML);
+                exhibit.style = "";
+            }
+        }
+
+        function hideCoopersCoast() {
+            document.getElementById("cooperCoast").style = "display: none";
+        }
+
+        function hideMinnesotaTrail() {
+            document.getElementById("minnesotaTrail").style = "display: none";
+        }
+
+        function hideEvergladeFun() {
+            document.getElementById("evergladeFun").style = "display: none";
+        }
+
+        function hideAfricaArea() {
+            document.getElementById("africaArea").style = "display: none";
+        }
+
+        function showCoopersCoast() {
+            document.getElementById("cooperCoast").style = "";
+        }
+
+        function showMinnesotaTrail() {
+            document.getElementById("minnesotaTrail").style = "";
+        }
+
+        function showEvergladeFun() {
+            document.getElementById("evergladeFun").style = "";
+        }
+
+        function showAfricaArea() {
+            document.getElementById("africaArea").style = "";
+        }
+    </script>
+    </head>
+    <body class='container' style="background-color: aqua;">
+        <title>Animals - Tate and Cooper's Zoo</title>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="calendarMay.html">Calendar</a>
+                        </li>
+                        
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="animals.html">Animals</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="activities.html">Activaties</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="https://i.ya-webdesign.com/images/t-transparent-big-letter-1.png" height=50 width=50 />
+                            <img src="https://i.ya-webdesign.com/images/letter-c-png.png" height=40 width=40 />
+                        </li>
+                        <li class="nav-item">
+                            <h1>  zoo</h1>
+                        </li>
+                      </ul>
+                      
+                      </form>
+                    </div>
+                  </nav>
+            <select id="exhibits" onchange="changeAnimals(this)">
+                    <option value="all">All</option>
+                    <option value="cooperCoast">Cooper's Coast</option>
+                    <option value="minnesotaTrail">Minnesota Trail</option>
+                    <option value="evergladeFun">Everglade Fun</option>
+                    <option value="africaArea">Africa Area</option>
+                </select>
+                <div id="cooperCoast">
+                        <h1>Cooper's Coast</h1>
+                        <ul>
+                            <a href="https://kids.nationalgeographic.com/animals/mammals/lion/" target="_blank">-African Lion</a><br />
+                        </ul>
+                        <ul>
+                            <a href="https://kids.nationalgeographic.com/animals/mammals/tiger/" target="_blank">-Bengal Tiger</a>
+                        </ul>
+                        <ul>
+                            <a href="https://kids.nationalgeographic.com/animals/mammals/amur-leopard/" target="_blank">-Amur Leopard</a>
+                        </ul>
+                        <ul>
+                            <a href="https://kids.nationalgeographic.com/animals/mammals/bobcat/" target="_blank">-Bobcat</a>
+                        </ul>
+                        <ul>
+                            <a href="https://kids.nationalgeographic.com/animals/mammals/mountain-lion/" target="_blank">-Mountain Lion</a>
+                        </ul>
+                        <ul>
+                            <a href="https://kids.nationalgeographic.com/explore/5-reasons-why-hub/5-reasons-snow-leopards/" target="_blank">-Snow
+                                Leopard</a>
+                        </ul>
+                
+                        <img src='https://www.laketobias.com/wp-content/uploads/bengal-tiger.jpg' />
+                
+                       
+                       
+                    </div>
+                    <div id="minnesotaTrail">
+                            <h1>Minnesota trail</h1>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/mammals/gray-wolf/" target="_blank">-Gray wolf</a>
+                            </ul>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/mammals/river-otter/" target="_blank">-River Otter</a>
+                            </ul>
+                            <ul>
+                                <a href="https://www.nationalgeographic.com/animals/mammals/r/red-fox/" target="_blank">-Red Fox</a>
+                            </ul>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/mammals/raccoon/" target="_blank">-Raccoon</a>
+                            </ul>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/mammals/beaver/" target="_blank">-Beaver</a>
+                            </ul>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/mammals/coyote/" target="_blank">-Coyote</a>
+                            </ul>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/mammals/wolverine/" target="_blank">-Wolverine</a>
+                            </ul>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/birds/pileated-woodpecker/" target="_blank">-Pileated
+                                    Woodpecker</a>
+                            </ul>
+                            <ul>
+                                <a href="https://en.wikipedia.org/wiki/Moose" target="_blank">-Canadian Moose</a>
+                            </ul>
+                            <ul>
+                                <a href="https://en.wikipedia.org/wiki/American_black_bear" target="_blank">-American black bear</a>
+                            </ul>
+                            <img src='https://www.nwf.org/-/media/NEW-WEBSITE/Shared-Folder/Wildlife/Mammals/mammal_north-american-river-otter_600x300.ashx' />
+                        </div>
+                        <div id="evergladeFun">
+                            <h1>Everglade fun</h1>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/birds/flamingo/" target="_blank">-Caribbean Flamingo</a>
+                            </ul>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/reptiles/american-alligator/" target="_blank">-American
+                                    Alligator</a>
+                            </ul>
+                           
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/mammals/west-indian-manatee/" target="_blank">-West
+                                    Indian Manatee</a>
+                            </ul>
+                            <ul>
+                                <a href="https://en.wikipedia.org/wiki/Roseate_spoonbill" target="_blank">-Roseate Spoonbill</a>
+                            </ul>
+                            <ul>
+                                <a href="https://en.wikipedia.org/wiki/Alligator_snapping_turtle" target="_blank">-Alligator Snapping
+                                    Turtle</a>
+                            </ul>
+                            <ul>
+                                <img src="https://thevlm.org/wp-content/uploads/Alligator-v2-300x200.jpg" />
+                            </ul>
+                        </div>
+                        <div id="africaArea">
+                            <h1>Africa Area</h1>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/mammals/african-elephant/" target="_blank">-African Elephant</a>
+                            </ul>
+                            <ul>
+                                <a href="https://en.wikipedia.org/wiki/White_rhinoceros" target="_blank">-White Rhinoceros</a>
+                            </ul>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/mammals/giraffe/" target="_blank">-Reticulated Giraffe</a>
+                            </ul>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/mammals/zebra/" target="_blank">-Plains Zebra</a>
+                            </ul>
+                            <ul>
+                                <a href="https://kids.nationalgeographic.com/animals/mammals/hippopotamus/" target="_blank">-Hippopotomus</a>
+                            </ul>
+                            <img src="https://animalfair.com/wp-content/uploads/2015/02/2013-07and08-tt-05-ia-kissing-giraffe-300x200-ss-88641013.jpg" />
+                        </div>
+    </body>
+</html>
